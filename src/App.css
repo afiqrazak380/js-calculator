@@ -1,19 +1,24 @@
 .App {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  background: rgb(87, 87, 185);
+  margin-top: 20vh;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 .calculator {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 30%;
+  /* height: 50vh;  */
+  border: 1px solid white;
 }
 
 .calculator > * {
-  border: 1px solid black;
   padding: 15px;
   cursor: pointer;
+  border: 1px solid white;
+  color: white;
 }
 
 .row {
@@ -22,8 +27,22 @@
 
 #display {
   text-align: right;
+  border: 1px solid black;
+  background: #505050;
 }
 
 #clear {
   text-align: center;
+  border: 1px solid black;
+  background: #d4d4d2;
+  color: black;
+}
+
+#add,
+#subtract,
+#multiply,
+#divide {
+  background: #ff9500;
+  color: white;
+  align-items: center;
 }
